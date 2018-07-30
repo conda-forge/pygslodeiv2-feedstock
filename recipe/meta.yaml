@@ -1,6 +1,6 @@
 {% set name = "pygslodeiv2" %}
-{% set version = "0.9.0" %}
-{% set sha256 = "e22edd82b7d65bb53d8f630f50738689d17785981fd3f128620c6a700d202bf0" %}
+{% set version = "0.9.1" %}
+{% set sha256 = "4297d2a78d9cc05365dd0b7b614c71057a09dec04fb29544183ee3c684e321e6" %}
 {% set variant = "openblas" %}
 
 package:
