@@ -1,7 +1,6 @@
 {% set name = "pygslodeiv2" %}
 {% set version = "0.9.1" %}
 {% set sha256 = "4297d2a78d9cc05365dd0b7b614c71057a09dec04fb29544183ee3c684e321e6" %}
-{% set variant = "openblas" %}
 
 package:
   name: {{ name|lower }}
@@ -13,28 +12,23 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 1001
   skip: True  # [win]
   skip: True  # [osx and py27]
   features:
-    - blas_{{ variant }}  # [not win]
-  script: PYGSLODEIV2_BLAS=openblas python -m pip install --no-deps --ignore-installed .
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - blas 1.1 {{ variant }}  # [not win]
-    - openblas          # [not win]
     - python
     - setuptools
     - pip
     - numpy
     - gsl
   run:
-    - blas 1.1 {{ variant }}  # [not win]
-    - openblas          # [not win]
     - python
     - {{ pin_compatible('numpy') }}
     - gsl
