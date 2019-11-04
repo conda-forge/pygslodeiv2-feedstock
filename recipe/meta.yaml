@@ -16,7 +16,7 @@ build:
   skip: True  # [win]
   skip: True  # [osx and py27]
   features:
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
