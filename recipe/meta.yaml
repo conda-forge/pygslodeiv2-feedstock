@@ -1,6 +1,6 @@
 {% set name = "pygslodeiv2" %}
-{% set version = "0.9.3" %}
-{% set sha256 = "eef5bb93dbd5c0b6cb08fb90a65ebd09f475ab6e8874f164f4be1adcab820cb1" %}
+{% set version = "0.9.4" %}
+{% set sha256 = "ee30278c05d7cdd0dd550fb970727da7dc96c7e0e783517f3b13b514e1b2095a" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   skip: true  # [osx and py27]
   features:
