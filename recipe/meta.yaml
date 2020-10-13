@@ -43,7 +43,7 @@ test:
 
 about:
   home: https://github.com/bjodah/{{ name }}
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_file: LICENSE
   summary: Python binding for odeiv2 interface from GNU Scientific Library (GSL)
   doc_url: https://bjodah.github.io/{{ name }}/latest
