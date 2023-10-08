@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 4
+  number: 5
   skip: true  # [win]
   skip: true  # [osx and py<36]
   features:
@@ -28,6 +28,7 @@ requirements:
     - pip
     - numpy
     - gsl
+    - cython
   run:
     - python
     - {{ pin_compatible('numpy') }}
