@@ -28,6 +28,7 @@ requirements:
     - pip
     - numpy
     - gsl
+    - cython
   run:
     - python
     - {{ pin_compatible('numpy') }}
