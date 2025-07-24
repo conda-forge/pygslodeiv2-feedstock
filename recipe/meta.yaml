@@ -1,6 +1,6 @@
 {% set name = "pygslodeiv2" %}
-{% set version = "0.9.6" %}
-{% set sha256 = "4e0a55c22d91d4ace303c74c3c0adf4618b4bb1d8c414e19f8f85b9ab2012024" %}
+{% set version = "0.9.7" %}
+{% set sha256 = "693d6c96d9041bb74ff4be7c5451f50cb33250fb6bfbc6c10e0ffc300cc300f8" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   skip: true  # [osx and py<36]
   features:
